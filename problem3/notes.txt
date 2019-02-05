@@ -1,0 +1,44 @@
+This exercise seems very interesting, and could be the only one you ask for maybe ?
+Having 3 different exercises to do in 48 hours is a lot in my opinion, mainly for people who are still working during the day.
+
+Unfortunately, I didn't have enough time to code this properly. I will then explain how I would have done it and what are my thoughts on this.
+
+Here are the steps needed:
+- Open and read the file in the argument in the command line
+- Get the panel and scrabble board variables
+- Get better word in scrabble board. For this, I suppose this is what has to be done:
+    - Go through the scrabble board first vertically and then horizontally
+    for each cell in each line
+        get letter
+        if (letter)
+            create a list of possible combinations:
+            - get all the empty cells on the left + letter found
+            - letter found + get all the empty cells on the right
+            - get all the empty cells at the top + letter found
+            - letter found + get all the empty cells at the bottom
+            - (? I don't have enough time to describe them all) I'll need to check if I can create another word with a part of the word already on the board + one or more of my letters.
+
+            For each empty cell number in each situation, I'll create the associated number of combination.
+            If 5 empty cells, I'll create 5 different possibilities, with 5, 4, 3, 2, 1 empty value in each.
+
+            Once I've found the list of possible combinations, I will check if I can form a word with my letters which exists in the dictionary.
+            For this, I think the easiest would be to get a list of words in my dictionary which have some specific conditions, like:
+                - get all the words which have the same length
+                    for each word, split all the letters in it and check if I have all the missing letters in my hand.
+                        if I do, then I'll add this word in an other array I'll call "availablePossibilities"
+
+            
+            Once I've done this in all the scrabble board (I know there are other checks which are missing but I unfortunately don't have enough time to describe them all),
+            I will calculate the score for each one of them and will keep the best score.
+            Maybe instead of doing this, I could have added this word in a variable called temporary output which is an object,
+            with a field word and another field score which calculates it.
+            At least I will replace this object if I find a word with a better score.
+
+
+
+Here are the getters needed to start this exercise:
+getPanel() => returns string // from the last line of the file
+getScrabbleBoard() // returns string from rest of the file
+getOuput(getScrabbleBoard(), getPanel()) // returns `(x_start,y_start,vertical,word)`
+getLetterScores(letter) // returns a number. use a switch(letter) and the case is using a letter.match(/[AEIOU]/)
+

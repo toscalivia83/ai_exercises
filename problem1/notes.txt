@@ -1,0 +1,12 @@
+This exercise was in my opinion pretty well described, even if I think the "number" and the "iterator" described make it a little bit more complex to understand.
+I was a bit confused at the beginning on which one was which.
+Fortunately the examples helped !
+
+I think having been able to make a code concise and descriptive enough following the steps.
+
+If I had to improve something, I would start by simplifying the code to have a better performance.
+That's probably possible to avoid doing all these loops, but I couldn't find the solution right now without too much time.
+
+How to run:
+npm i
+node index.js [fileName]

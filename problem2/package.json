@@ -1,0 +1,12 @@
+{
+  "name": "problem2",
+  "version": "1.0.0",
+  "description": "This is my problem 2 with the pathFinding function",
+  "main": "index.js",
+  "scripts": {},
+  "author": "Marion Gourlaouen",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}

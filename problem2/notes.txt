@@ -1,0 +1,26 @@
+This exercise was very interesting, and I think it made sense in my mind as I was reading.
+Having the example of the pirate was a good one, it helped imagining what was what.
+
+
+If I had to improve something, I would like first of all to use everywhere the same type of coordinates.
+As I'm using the "flat coordinates" for the coordinates coming from the file and the "vector coordinates" for the others...
+I had honestly thought about starting with the vector coordinates since the beginning of the exercise but it was more obvious in my mind in the other way.
+
+I could find some better names for the functions, as I'm using different types of coordinates, it makes it less readable/understandable.
+
+I didn't have enough time to handle the errors, but I imagine this should not have taken so long...
+I would have added a function which tests different type of coordinates which shoud not go through my code and return straight an "error" in the file.
+
+In my function to find the best path, here are the 3 variables I used:
+  - validAdjacentCells: the possible valid cells I'll be able to display in the map
+  - lastAdjacentCells: to allow me to get the adjacent of the last adjacent cells I went through
+  - currentAdjacentCells: to make the difference between the one I went through and the ones I'm going through right now
+
+As I go through the instructions I realize that the path finding algorithm was not required... I hope this won't be a stopper.
+It was actually very interesting as well to build this function, which is related with the AI principles and what you are doing in the company.
+
+It could have been useful to have some unit tests in here.
+
+How to run:
+npm i
+node index.js [fileName]

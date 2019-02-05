@@ -1,94 +1,11 @@
-# Vivacity Labs Coding Challenge
-Thank you for applying to join the Vivacity team, and welcome to our coding 
-challenge.
-
-Please read all of these instructions, then tackle the problems in order. 
-There are 3 problems of increasing difficulty.
-
+## Coding Challenge
 This document first gives overall instructions, then details each of the 
 problems. If something is unclear, feel free to either make reasonable 
 assumptions or ask for clarification.
 
-Thank you again for your time completing this challenge, we look forward to 
-receiving your code!
-
 ---
 ## Overall Instructions
-The challenge is composed of 3 problems. Please try to complete all of the 
-problems, but don’t panic if you aren’t able to, you won’t be disqualified. 
-Overall, this challenge isn’t about just getting the ‘right’ answer, it’s 
-about writing good code.
-
-Feel free to use any programming language which we can run without excessive 
-setup, on a typical Ubuntu desktop. Please choose a language which will best 
-demonstrate your skills for the role(s) you're applying for.
-
-Using the web for help is perfectly fine, but be sensible: if a critical chunk 
-of your solution is copied from a github repo, that’s clearly not ok. Use of 
-external libraries is discussed separately for each problem. Remember that 
-your solution should demonstrate your ability as well as possible. Any 
-significant use of external code must be referenced. For clarity, plagiarism 
-or illegal reuse of code is not allowed.
-
-### How to test your solutions
-The challenge uses input/output file based testing. Your solution to each 
-problem needs to read an input from a text file, then output the answer to 
-another text file in the same location with the same name and the suffix 
-".answer" appended to the name.
-
-**Your programs must be designed to take in a single command-line argument 
-that will be an absolute path to the input file. For example, if you use Python
-, we will run your programs as follows.**
-˘
-```
-python your-hash-solution.py /home/johndoe/challenge/input/hash-1.txt
-```
- 
-In this case, your program should output the answer to 
-`/home/johndoe/challenge/input/hash-1.txt.answer`.
-
-There are example input and output files provided for each problem, which you 
-can use as a baseline for testing your code. For example, your solution to 
-Problem 1 should be able to read the contents of `hash-1.txt` in the `input` 
-folder and produce a file called `hash-1.txt.answer` in the same folder, whose 
-content is *exactly* equal to that of the `hash-1.txt.example.answer` 
-file.
-
-Your code will be tested automatically (using the supplied tests and others) 
-and reviewed manually. Please do not assume that input files will be well-
-formed (e.g. your code should appropriately handle unexpected characters in 
-the input file). Please use the linux-style newlines in your files (`\n`, 
-ASCII code 10). Note that your output files **should not have a newline at the 
-end of the file**.
-
-### What we’re looking for
-Please approach each problem as though you were starting the code for a new 
-Vivacity product. At a high level, a great solution is one which:
-- Delivers all of the desired functionality
-- Could be picked up by a colleague and understood quickly
-- Could be extended or reworked in the future
-- Uses the features of your chosen programming language well
-- Handles unexpected inputs appropriately
-
-To be specific, your code will be evaluated for: 
-- Functionality (whether it solves the problem)
-- Approach (e.g. algorithm design)
-- Code quality (e.g. appropriate use of functions)
-- Cleanliness (e.g. variable naming)
-- Performance (speed, less important)
-
-### What to submit and how
-We have sent you this challenge as an archive. Please add your solutions to 
-the 3 problems **as separate files** at the root of this, as well as a file 
-called `notes.txt`, and then email the zip archive back to us.
-
-The notes.txt file should include:
-- Brief instructions on how to run your code
-- Any notes we should bear in mind (e.g. why you made an unusual choice)
-- A brief note on what you found hardest about the challenge
-- A brief note on how you could improve your code further
-- Any feedback to us on how to improve either the challenge itself or the 
-recruitment process so far
+The challenge is composed of 3 problems.
 
 ## Problem 1: Hash Iterator
 ### Problem description

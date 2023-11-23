@@ -40,9 +40,7 @@ const findCharacterInHash = (outputArray, salt, integer, iterator) => {
         outputArray[parseInt(matchIndex)] = characterInHash;
       }
     }
-
   }
-
   return outputArray;
 }
 
